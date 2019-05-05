@@ -113,6 +113,6 @@ def apply_op(op, args):
 
 if __name__ == '__main__':
     data = '''
-    foo ← {a + w} +/ a b cd34 23.4 (2 3⍴1 2 3 [4 5] 6)
+    foo ← {a + w} +/ a b cd34 23.4 (2 3⍴1 2 3 [4 * 5] 6)
     '''
     print(eval_tree(scan_tokens_r2l(data)))
